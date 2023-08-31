@@ -169,7 +169,7 @@ body{
   width: 260px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
   background: #1d1b31;
   padding: 12px 0;
   transition: all 0.5s ease;
@@ -203,6 +203,12 @@ body{
   font-weight: 500;
   white-space: nowrap;
 }
+
+.info-profile {
+  /* display: block; */
+  align-items:start;
+}
+
 .sidebar.close .profile-details i,
 .sidebar.close .profile-details .profile_name,
 .sidebar.close .profile-details .job{
@@ -269,8 +275,12 @@ body{
   }
 }
 
+.scale-icon-logo {
+    scale: 35%;
+}
+
 .scale-icon {
-    scale: 65%;
+  scale: 110%;
 }
 
 :root {
