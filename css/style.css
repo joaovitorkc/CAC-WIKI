@@ -235,7 +235,16 @@
   flex-wrap: wrap;
   position: fixed;
   z-index: 1;
+  backdrop-filter: blur(10px); 
+  background-color: rgba(198, 192, 219, 0.445);
+  padding: 10px 14px; 
+  border-radius: 5px; 
 }
+
+.content-head{
+background: #11101d;
+}
+
 .home-content{
   display: flex;
   align-items: center;
@@ -251,7 +260,7 @@
   margin-right: 10px;
 }
 .home-section .home-content-head .text{
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 600;
 }
 
@@ -292,6 +301,7 @@
 :root {
   --card-height: 300px;
   --card-width: calc(var(--card-height) / 1.5);
+  --gradient-border: linear-gradient(-50deg, rgba(2,0,36,1), rgba(93,6,80,1), rgb(6, 0, 61)) 1;
 }
 * {
   box-sizing: border-box;
@@ -428,5 +438,279 @@
   }
 
 .body-content {
-  margin-top: 50px;
+  margin-top: 68px;
 }
+
+.logo-beta {
+  font-size: 13px;
+  font-weight: 450;
+}
+
+.body-card2{
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to right, #008000, #00e600, #b3ffb3, #00e600, #008000);
+	font-family: 'Martel Sans', sans-serif;
+}
+
+.body-card2 h1 {
+	font-size: 5.25vmin;
+	text-align: center;
+	color: white;
+}
+.body-card2 p {
+	font-size: max(10pt, 2.5vmin);
+	line-height: 1.4;
+	color: #0e390e;
+	margin-bottom: 1.5rem;
+}
+
+.wrap-card2 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 85vmin;
+    height: 25em;
+    border: 8px solid var(--gradient-border) ;
+    margin: 2rem auto;
+    transition: .3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px; /* Adicione essa linha para bordas arredondadas */
+}
+
+
+/* Em seguida, você pode usar a variável onde precisar em seu CSS */
+elemento {
+  background: var(--meu-gradient);
+}
+
+
+.overlay-card2 {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 1rem .75rem;
+	background: #1d1b31;
+	transition: .4s ease-in-out;
+	z-index: 1;
+  color: #f9f9f9 ;
+}
+.overlay-content-card2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 15vmin;
+	height: 100%;
+	padding: .5rem 0 0 .5rem;
+	border: 3px solid;
+	border-image: 
+    	linear-gradient(
+      	to bottom, 
+      	#AEA724 5%,
+      	forestgreen 35% 65%,
+      	#AEA724 95%
+    	) 0 0 0 100%;
+	transition: .3s ease-in-out .2s;
+	z-index: 1;
+}
+.image-content-card21 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	background-image: url("https://th.bing.com/th/id/R.63d50d170e54d2f35d9013d492db7cd8?rik=MM5TlneJkEYm9w&riu=http%3a%2f%2f2.bp.blogspot.com%2f_Dw0tHddWMAw%2fTHiMlwvoHnI%2fAAAAAAAAARo%2fzkvPSjQVlgQ%2fs1600%2fworm-nightcrawler.jpg&ehk=zfHcD9h3wjizMZPmNOKCU%2fKiQO103atCj3GrlkHnaFI%3d&risl=&pid=ImgRaw&r=0");
+	background-size: cover;
+	transition: .3s ease-in-out;
+	/* border: 1px solid green; */
+}
+
+.image-content-card22 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	background-image: url("https://th.bing.com/th/id/R.e85e29f1940f517fbf606bb8886574c9?rik=JTZVpPd0%2fs%2bchw&riu=http%3a%2f%2f4.bp.blogspot.com%2f-c11_sVraLwg%2fUkuS1IgvbmI%2fAAAAAAAAAJc%2f4du5QTEjuKE%2fs1600%2fIMG_6910_00.jpg&ehk=6ZAVaPx0algu9GzzDrFK%2f1hMgHj1%2bklyTHe7iKcO2hc%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1");
+	background-size: cover;
+	transition: .3s ease-in-out;
+	/* border: 1px solid green; */
+}
+
+.image-content-card23 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	background-image: url("https://3.bp.blogspot.com/-xjc0LDnyRKs/UXlHgtU8xYI/AAAAAAAAALU/O2_q3ceKF4Y/s1600/4.jpg");
+	background-size: cover;
+	transition: .3s ease-in-out;
+	/* border: 1px solid green; */
+}
+
+.image-content-card24 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	background-image: url("https://th.bing.com/th/id/R.89cc5c9b26bc7a63af24fff4a8d6ee74?rik=9otRkafZIm2OXQ&pid=ImgRaw&r=0&sres=1&sresct=1");
+	background-size: cover;
+	transition: .3s ease-in-out;
+	/* border: 1px solid green; */
+}
+
+
+.dots-card2 {
+	position: absolute;
+	bottom: 1rem;
+	right: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 55px;
+	height: 4vmin;
+	transition: .3s ease-in-out .3s;
+}
+.dot-card2 {
+	width: 14px;
+	height: 14px;
+	background: yellow;
+	border: 1px solid indigo;
+	border-radius: 50%;
+	transition: .3s ease-in-out .3s;
+}
+
+.text-card2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	padding: 3vmin 4vmin;
+	background: #fff;
+	box-shadow: inset 1px 1px 15px 0 rgba(0 0 0 / .4);
+	overflow-y: scroll;
+}
+
+.wrap-card2:hover .overlay-card2
+ {
+	transform: translateX(-60vmin);
+}
+.wrap-card2:hover .image-content-card2 {
+	width: 30vmin;
+}
+.wrap-card2:hover .overlay-content-card2 {
+	transition-delay: .2s;
+	transform: translateX(60vmin);
+}
+.wrap-card2:hover .dots-card2 {
+	transform: translateX(1rem);
+}
+.wrap-card2:hover .dots-card2 .dot-card2 {
+	background: white;
+}
+.wrap-card2:hover .overlay-card2 .title-card2 {
+	color: #7ea57e00;
+}
+
+.wrap-card2:hover .overlay-card2 .subtitle-card2 {
+	color: #7ea57e00;
+}
+
+.subtitle-card2 {
+  color: white; 
+  margin-bottom: 2.5rem;
+}
+
+
+
+/* Animations and timing delays */
+.animate-card2 {
+  animation-duration: 0.7s;
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+  animation-fill-mode: backwards;
+}
+/* Pop In */
+.pop-card2 { animation-name: pop; }
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+/* Slide In */
+.slide-card2 { animation-name: slide; }
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translate(4em, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* Slide Left */
+.slide-left-card2 { animation-name: slide-left; }
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.slide-up-card2 {animation-name: slide-up;}
+@keyframes slide-up {
+	0% {
+		opacity: 0;
+		transform: translateY(3em);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+.delay-3 {
+  animation-delay: 0.9s;
+}
+.delay-4 {
+  animation-delay: 1.2s;
+}
+.delay-5 {
+  animation-delay: 1.5s;
+}
+.delay-6 {
+  animation-delay: 1.8s;
+}
+.delay-7 {
+  animation-delay: 2.1s;
+}
+.delay-8 {
+  animation-delay: 2.4s;
+}
+;
