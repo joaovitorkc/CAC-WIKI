@@ -600,30 +600,66 @@ elemento {
 	overflow-y: scroll;
 }
 
-.wrap-card2:hover .overlay-card2
- {
-	transform: translateX(-60vmin);
+/* Estilos de hover */
+.wrap-card2:hover .overlay-card2 {
+  transform: translateX(-60vmin);
 }
+
 .wrap-card2:hover .image-content-card2 {
-	width: 30vmin;
+  width: 30vmin;
 }
+
 .wrap-card2:hover .overlay-content-card2 {
-	transition-delay: .2s;
-	transform: translateX(60vmin);
+  transition-delay: .2s;
+  transform: translateX(60vmin);
 }
+
 .wrap-card2:hover .dots-card2 {
-	transform: translateX(1rem);
+  transform: translateX(1rem);
 }
+
 .wrap-card2:hover .dots-card2 .dot-card2 {
-	background: white;
+  background: white;
 }
+
 .wrap-card2:hover .overlay-card2 .title-card2 {
-	color: #7ea57e00;
+  color: #7ea57e00;
 }
 
 .wrap-card2:hover .overlay-card2 .subtitle-card2 {
-	color: #7ea57e00;
+  color: #7ea57e00;
 }
+
+/* Estilos de toque para dispositivos móveis */
+.wrap-card2.touch .overlay-card2 {
+  transform: translateX(-60vmin);
+}
+
+.wrap-card2.touch .image-content-card2 {
+  width: 30vmin;
+}
+
+.wrap-card2.touch .overlay-content-card2 {
+  transition-delay: .2s;
+  transform: translateX(60vmin);
+}
+
+.wrap-card2.touch .dots-card2 {
+  transform: translateX(1rem);
+}
+
+.wrap-card2.touch .dots-card2 .dot-card2 {
+  background: white;
+}
+
+.wrap-card2.touch .overlay-card2 .title-card2 {
+  color: #7ea57e00;
+}
+
+.wrap-card2.touch .overlay-card2 .subtitle-card2 {
+  color: #7ea57e00;
+}
+
 
 .subtitle-card2 {
   color: white; 

@@ -33,3 +33,10 @@ var x = setInterval(function() {
     document.getElementById("loading").style.display = "none"; // Ocultar o loading quando a data for exibida
   }
 }, 1000);
+
+// Detectar se o dispositivo é sensível ao toque
+if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+  // Adicione a classe 'touch' ao elemento para aplicar estilos de toque
+  const wrapCard = document.querySelector('.wrap-card2');
+  wrapCard.classList.add('touch');
+}
