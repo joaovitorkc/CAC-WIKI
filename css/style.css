@@ -234,7 +234,7 @@
   align-items: center;
   flex-wrap: wrap;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   backdrop-filter: blur(10px); 
   background-color: rgba(198, 192, 219, 0.445);
   padding: 10px 14px; 
