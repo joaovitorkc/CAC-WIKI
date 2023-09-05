@@ -653,11 +653,11 @@ elemento {
 }
 
 .wrap-card2.touch .overlay-card2 .title-card2 {
-  color: #7ea57e00;
+  display: none;
 }
 
 .wrap-card2.touch .overlay-card2 .subtitle-card2 {
-  color: #7ea57e00;
+  display: none;
 }
 
 
