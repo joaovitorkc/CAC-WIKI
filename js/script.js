@@ -14,7 +14,7 @@ sidebarBtn.addEventListener("click", ()=>{
 });
 
 
-var deadline = new Date("Sept 5, 2023 12:00:00").getTime();
+var deadline = new Date("Sept 12, 2023 12:00:00").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
   var t = deadline - now;
